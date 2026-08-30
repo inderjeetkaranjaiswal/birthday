@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fce7f3" />
+      <stop offset="100%" stop-color="#fbcfe8" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg1)" rx="16"/>
+  <!-- Sun & Clouds -->
+  <circle cx="200" cy="180" r="70" fill="#fde047" opacity="0.6"/>
+  <path d="M 120 220 Q 150 170 200 180 Q 250 170 280 220 Z" fill="#ffffff" opacity="0.9"/>
+  <!-- Cute cat duo -->
+  <!-- Cat 1 -->
+  <circle cx="160" cy="240" r="35" fill="#f43f5e"/>
+  <polygon points="140,215 155,200 165,220" fill="#f43f5e"/>
+  <polygon points="155,220 165,200 180,215" fill="#f43f5e"/>
+  <circle cx="150" cy="235" r="4" fill="#ffffff"/>
+  <circle cx="170" cy="235" r="4" fill="#ffffff"/>
+  <path d="M 158 243 Q 160 248 162 243" stroke="#ffffff" stroke-width="2" fill="none"/>
+  <!-- Cat 2 -->
+  <circle cx="235" cy="245" r="30" fill="#fb7185"/>
+  <polygon points="215,225 225,210 235,228" fill="#fb7185"/>
+  <polygon points="235,228 245,210 255,225" fill="#fb7185"/>
+  <circle cx="227" cy="240" r="3.5" fill="#ffffff"/>
+  <circle cx="243" cy="240" r="3.5" fill="#ffffff"/>
+  <!-- Heart above -->
+  <path d="M 195 140 C 195 130, 180 120, 170 135 C 160 120, 145 130, 145 140 C 145 155, 170 170, 170 175 C 170 170, 195 155, 195 140 Z" fill="#e11d48"/>
+  <text x="200" y="320" font-family="'Caveat', cursive" font-size="28" fill="#9f1239" text-anchor="middle">Best Friends Forever ✨</text>
+</svg>

@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Playfair Display', 'Cormorant Garamond', serif;
+    --font-handwriting: 'Caveat', 'Dancing Script', cursive;
+    --font-body: 'Poppins', 'Inter', sans-serif;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: #faf5ef;
+    color: #4a2b33;
+  }
+}
+
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+.font-handwriting {
+  font-family: var(--font-handwriting);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+/* Cute notebook / paper grid background */
+.bg-notebook-grid {
+  background-color: #faf5ef;
+  background-image: 
+    linear-gradient(to right, rgba(225, 185, 195, 0.15) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(225, 185, 195, 0.15) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Subtle card notebook lines */
+.bg-lined-paper {
+  background-color: #fffefb;
+  background-image: linear-gradient(to bottom, transparent 95%, rgba(225, 170, 185, 0.25) 96%);
+  background-size: 100% 32px;
+}
+
+/* Custom polaroid shadow & texture */
+.polaroid-shadow {
+  box-shadow: 0 10px 25px -5px rgba(74, 43, 51, 0.12), 0 8px 10px -6px rgba(74, 43, 51, 0.08);
+}
+
+.polaroid-shadow-hover {
+  box-shadow: 0 20px 30px -10px rgba(186, 68, 102, 0.2), 0 12px 15px -8px rgba(74, 43, 51, 0.15);
+}
+
+/* Soft glow effects */
+.pink-glow {
+  box-shadow: 0 0 25px rgba(244, 114, 182, 0.35);
+}
+
+.wine-glow {
+  box-shadow: 0 0 30px rgba(159, 18, 57, 0.25);
+}
+
+/* Washi tape effect */
+.washi-tape {
+  background-color: rgba(251, 207, 232, 0.7);
+  backdrop-filter: blur(2px);
+  border-left: 2px dashed rgba(244, 114, 182, 0.5);
+  border-right: 2px dashed rgba(244, 114, 182, 0.5);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Custom animations */
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(2deg); }
+}
+
+@keyframes pulseSoft {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.04); opacity: 0.92; }
+}
+
+@keyframes bounceCute {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+@keyframes wiggleAngry {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-5deg); }
+  75% { transform: rotate(5deg); }
+}
+
+.animate-float-slow {
+  animation: floatSlow 4s ease-in-out infinite;
+}
+
+.animate-pulse-soft {
+  animation: pulseSoft 3s ease-in-out infinite;
+}
+
+.animate-bounce-cute {
+  animation: bounceCute 2s ease-in-out infinite;
+}
+
+.animate-wiggle-angry {
+  animation: wiggleAngry 0.4s ease-in-out infinite;
+}
+
+/* Hide scrollbar for clean app appearance */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
